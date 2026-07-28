@@ -1,0 +1,751 @@
+[
+  {
+    "id": "385267",
+    "category": "Docinhos por Cento",
+    "category_id": "60527",
+    "name": "Bandeja de 35 Docinhos Tradicionais",
+    "description": "",
+    "price": 64,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385267/photo1674840130.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "532090",
+        "name": "Bandeja com 35 docinhos",
+        "price": 64
+      }
+    ],
+    "priceNote": "R$ 64,00"
+  },
+  {
+    "id": "385266",
+    "category": "Docinhos por Cento",
+    "category_id": "60527",
+    "name": "Docinhos (Mínimo de 100 unidades)",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385266/photo1674485994.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2433614",
+    "category": "Salgados",
+    "category_id": "60528",
+    "name": "Salgados Assados (Mínimo de 50 unidades)",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2433614/assados-3.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "385264",
+    "category": "Salgados",
+    "category_id": "60528",
+    "name": "Salgados Fritos (Mínimo de 50 unidades)",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385264/photo.jpeg",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "378160",
+    "category": "Descartáveis",
+    "category_id": "61612",
+    "name": "Velas",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/378160/6.jpg",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "378153",
+    "category": "Descartáveis",
+    "category_id": "61612",
+    "name": "Kit Pratinho e Garfinho",
+    "description": "",
+    "price": 3,
+    "image": "",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "522847",
+        "name": "Kit Pratinho e Garfinho",
+        "price": 3
+      }
+    ],
+    "priceNote": "R$ 3,00"
+  },
+  {
+    "id": "385268",
+    "category": "Docinhos Meio Cento (50 unidades)",
+    "category_id": "62863",
+    "name": "Brigadeiro Tradicional - Confeito Bolinha",
+    "description": "",
+    "price": 85,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385268/photo1674485069.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "532091",
+        "name": "50 unidades",
+        "price": 85
+      }
+    ],
+    "priceNote": "R$ 85,00"
+  },
+  {
+    "id": "385271",
+    "category": "Docinhos Meio Cento (50 unidades)",
+    "category_id": "62863",
+    "name": "Brigadeiro Branco Tradicional",
+    "description": "",
+    "price": 85,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385271/photo1674485175.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "532094",
+        "name": "50 unidades",
+        "price": 85
+      }
+    ],
+    "priceNote": "R$ 85,00"
+  },
+  {
+    "id": "385270",
+    "category": "Docinhos Meio Cento (50 unidades)",
+    "category_id": "62863",
+    "name": "Cajuzinho",
+    "description": "",
+    "price": 85,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385270/photo1674485143.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "532093",
+        "name": "50 unidades",
+        "price": 85
+      }
+    ],
+    "priceNote": "R$ 85,00"
+  },
+  {
+    "id": "385269",
+    "category": "Docinhos Meio Cento (50 unidades)",
+    "category_id": "62863",
+    "name": "Beijinho",
+    "description": "",
+    "price": 85,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/385269/photo1674485114.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "532092",
+        "name": "50 unidades",
+        "price": 85
+      }
+    ],
+    "priceNote": "R$ 85,00"
+  },
+  {
+    "id": "534761",
+    "category": "Tortas Salgadas",
+    "category_id": "84508",
+    "name": "Torta de Palmito",
+    "description": "",
+    "price": 140,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/534761/photo.jpeg",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "744553",
+        "name": "Unidade",
+        "price": 140
+      }
+    ],
+    "priceNote": "R$ 140,00"
+  },
+  {
+    "id": "534760",
+    "category": "Tortas Salgadas",
+    "category_id": "84508",
+    "name": "Torta de Frango com Catupiry",
+    "description": "",
+    "price": 140,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/534760/photo.jpeg",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "744552",
+        "name": "Unidade",
+        "price": 140
+      }
+    ],
+    "priceNote": "R$ 140,00"
+  },
+  {
+    "id": "748188",
+    "category": "Presente",
+    "category_id": "109535",
+    "name": "Sacola Presente Doce Magia",
+    "description": "",
+    "price": 5,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/748188/photo1783003684.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "1058184",
+        "name": "Tamanho P - 15x25cm",
+        "price": 5
+      },
+      {
+        "variationId": "1058185",
+        "name": "Tamanho M - 20x25cm",
+        "price": 5
+      },
+      {
+        "variationId": "1058186",
+        "name": "Tamanho G - 30x25cm",
+        "price": 5
+      }
+    ],
+    "priceNote": "R$ 5,00"
+  },
+  {
+    "id": "2738972",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Cheesecake Nova Iorquina",
+    "description": "",
+    "price": 165,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2738972/photo1765312770.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "3400118",
+        "name": "Frutas Vermelhas",
+        "price": 165
+      },
+      {
+        "variationId": "3400119",
+        "name": "Pistache",
+        "price": 165
+      },
+      {
+        "variationId": "3400120",
+        "name": "Nutella",
+        "price": 165
+      },
+      {
+        "variationId": "3400122",
+        "name": "Doce de Leite",
+        "price": 165
+      }
+    ],
+    "priceNote": "R$ 165,00"
+  },
+  {
+    "id": "548737",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Pudim de Leite Condensado",
+    "description": "",
+    "price": 79,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/548737/photo1674491241.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "768882",
+        "name": "Tamanho único",
+        "price": 79
+      }
+    ],
+    "priceNote": "R$ 79,00"
+  },
+  {
+    "id": "566926",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Surpresa de Uva",
+    "description": "",
+    "price": 69,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/566926/Surpresa_de_Uva_trad_.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "793853",
+        "name": "P (6 à 8 Porções) - 650g",
+        "price": 69
+      },
+      {
+        "variationId": "793854",
+        "name": "M 12 à 15 Porções - 1,3kg",
+        "price": 129
+      }
+    ],
+    "priceNote": "A partir de R$ 69,00"
+  },
+  {
+    "id": "1530068",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Torta Banoffee",
+    "description": "",
+    "price": 95,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1530068/photo1674840369.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "1976819",
+        "name": "Tamanho único",
+        "price": 95
+      }
+    ],
+    "priceNote": "R$ 95,00"
+  },
+  {
+    "id": "730611",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Sobremesa Pavê de Ouro Branco",
+    "description": "",
+    "price": 69,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/730611/Ouro_Branco_Prancheta_1.jpg",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "1033029",
+        "name": "P (6 à 8 Porções) - 650g",
+        "price": 69
+      },
+      {
+        "variationId": "1033030",
+        "name": "M 12 à 15 Porções - 1,3kg",
+        "price": 129
+      }
+    ],
+    "priceNote": "A partir de R$ 69,00"
+  },
+  {
+    "id": "566823",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Torta de Morango",
+    "description": "",
+    "price": 99,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/566823/Sem_t_tulo-5_Prancheta_1_Prancheta_1_Prancheta_1.jpg",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "793712",
+        "name": "Tamanho único",
+        "price": 99
+      }
+    ],
+    "priceNote": "R$ 99,00"
+  },
+  {
+    "id": "566817",
+    "category": "Sobremesas",
+    "category_id": "137580",
+    "name": "Torta de Limão",
+    "description": "",
+    "price": 99,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/566817/Sem_t_tulo-4_Prancheta_1.jpg",
+    "oldPrice": null,
+    "priceVariations": [
+      {
+        "variationId": "793705",
+        "name": "Tamanho único",
+        "price": 99
+      }
+    ],
+    "priceNote": "R$ 99,00"
+  },
+  {
+    "id": "2813275",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Kinder",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2813275/photo1784215281.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2813157",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Mil Folhas de Morango",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2813157/photo1784131440.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2813149",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Brigadeiro Chocoball",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2813149/photo1784140792.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2813143",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Brigadeiro Colorido",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2813143/photo1784147463.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2792772",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Trufado de Maracujá",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2792772/photo1777930607.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2792769",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Maracujá",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2792769/photo1777930071.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372066",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Abacaxi",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372066/photo1674243976.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372064",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Ameixa",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372064/photo1674235817.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372572",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Brigadeiro",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372572/photo1674244511.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "1680825",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Beijinho com Doce de Leite",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1680825/photo1674484252.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372573",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Casadinho",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372573/photo1674244561.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372576",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Choconozes",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372576/photo1784140733.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372069",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Ninho com Morango",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372069/photo1674244372.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372057",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo de Nozes",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372057/photo1674234784.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372580",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Ferrero Rocher",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372580/photo1674244649.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372577",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Floresta Negra",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372577/WhatsApp_Image_2020-04-14_at_23.31.30.jpeg",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372583",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Ninho com Nutella",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372583/photo1674244753.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "631915",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Mousse de Chocolate com Brigadeiro e Morango",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/631915/photo1674484642.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "372585",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Bolo Ouro Branco",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/372585/WhatsApp_Image_2020-04-14_at_23.30.59.jpeg",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "1654413",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Brigadeiro Belga com Doce de Leite",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1654413/photo.jpeg",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2771128",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Limão Siciliano",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2771128/photo1772728987.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "2156955",
+    "category": "Bolos Confeitados",
+    "category_id": "193391",
+    "name": "Pistache com Frutas Vermelhas",
+    "description": "",
+    "price": 0,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/2156955/photo1782829510.jpeg.webp",
+    "oldPrice": null,
+    "priceVariations": [],
+    "priceNote": "Consultar"
+  },
+  {
+    "id": "1894274",
+    "category": "Descontos",
+    "category_id": "c_promotion",
+    "name": "Kit 1 - Média de 5 Pessoas",
+    "description": "",
+    "price": 159,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1894274/photo1783003073.jpeg.webp",
+    "oldPrice": 208,
+    "priceVariations": [
+      {
+        "variationId": "2446764",
+        "name": "Valor do Kit",
+        "price": 159
+      }
+    ],
+    "priceNote": "R$ 159,00",
+    "discount": 24
+  },
+  {
+    "id": "1894276",
+    "category": "Descontos",
+    "category_id": "c_promotion",
+    "name": "Kit 3 - Média de 25 Pessoas",
+    "description": "",
+    "price": 439,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1894276/photo1783003185.jpeg.webp",
+    "oldPrice": 549,
+    "priceVariations": [
+      {
+        "variationId": "2446766",
+        "name": "Valor do Kit",
+        "price": 439
+      }
+    ],
+    "priceNote": "R$ 439,00",
+    "discount": 20
+  },
+  {
+    "id": "1894275",
+    "category": "Descontos",
+    "category_id": "c_promotion",
+    "name": "Kit 2 - Média de 15 Pessoas",
+    "description": "",
+    "price": 269,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1894275/photo1783003130.jpeg.webp",
+    "oldPrice": 319,
+    "priceVariations": [
+      {
+        "variationId": "2446765",
+        "name": "Valor do Kit",
+        "price": 269
+      }
+    ],
+    "priceNote": "R$ 269,00",
+    "discount": 16
+  },
+  {
+    "id": "1894857",
+    "category": "Descontos",
+    "category_id": "c_promotion",
+    "name": "Kit 6 - Média de 70 Pessoas",
+    "description": "",
+    "price": 1499,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1894857/photo1783003487.jpeg.webp",
+    "oldPrice": 1686,
+    "priceVariations": [
+      {
+        "variationId": "2447522",
+        "name": "valor do kit",
+        "price": 1499
+      }
+    ],
+    "priceNote": "R$ 1.499,00",
+    "discount": 11
+  },
+  {
+    "id": "1894278",
+    "category": "Descontos",
+    "category_id": "c_promotion",
+    "name": "Kit 4 - Média de 40 Pessoas",
+    "description": "",
+    "price": 699,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1894278/photo1783003259.jpeg.webp",
+    "oldPrice": 773,
+    "priceVariations": [
+      {
+        "variationId": "2446768",
+        "name": "Valor do Kit",
+        "price": 699
+      }
+    ],
+    "priceNote": "R$ 699,00",
+    "discount": 10
+  },
+  {
+    "id": "1894279",
+    "category": "Descontos",
+    "category_id": "c_promotion",
+    "name": "Kit 5- Média de 50 Pessoas",
+    "description": "",
+    "price": 1099,
+    "image": "https://cdn.neemo.com.br/uploads/item/photo/1894279/photo1783003351.jpeg.webp",
+    "oldPrice": 1175,
+    "priceVariations": [
+      {
+        "variationId": "2446769",
+        "name": "Valor do Kit",
+        "price": 1099
+      }
+    ],
+    "priceNote": "R$ 1.099,00",
+    "discount": 6
+  }
+]

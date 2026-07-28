@@ -1,0 +1,15 @@
+{
+  "name": "doce-magia-gourmet",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Doce Magia Gourmet — Confeitaria artesanal em Osasco/SP. Brigadeiros, brownies, bolos e doces por encomenda.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

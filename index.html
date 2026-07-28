@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doce Magia Gourmet — Confeitaria artesanal em Osasco/SP. Brigadeiros, brownies, bolos no pote e bolos decorados por encomenda.">
+    <title>Doce Magia Gourmet — Confeitaria Artesanal em Osasco</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="module" src="/src/js/main.js"></script>
+</head>
+<body>
+    <!-- ============================ TOP STRIP ============================ -->
+    <div class="top-strip">
+        <div class="container top-strip-inner">
+            <span>📍 Osasco, SP — Rua Laranjeira, 88</span>
+            <span class="dot">•</span>
+            <span>✉️ contato@docemagiagourmet.com.br</span>
+            <span class="dot">•</span>
+            <span class="open-badge"><span class="pulse"></span> Encomendas abertas</span>
+        </div>
+    </div>
+
+    <!-- ============================ HEADER / NAVIGATION ============================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#hero" class="brand" aria-label="Doce Magia Gourmet — Início">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+                        <circle cx="32" cy="40" r="20" fill="#ffc8d9"/>
+                        <path d="M12 32 Q32 18 52 32" stroke="#ff7e7e" stroke-width="3" fill="none"/>
+                        <circle cx="22" cy="20" r="4" fill="#ff7e7e"/>
+                        <circle cx="32" cy="14" r="5" fill="#d4a857"/>
+                        <circle cx="42" cy="20" r="4" fill="#c9a8ff"/>
+                        <rect x="16" y="14" width="2" height="8" fill="#ff7e7e"/>
+                        <rect x="30" y="8" width="2" height="10" fill="#d4a857"/>
+                        <rect x="40" y="14" width="2" height="8" fill="#c9a8ff"/>
+                        <ellipse cx="32" cy="40" rx="10" ry="3" fill="#fff" opacity="0.5"/>
+                    </svg>
+                </span>
+                <span class="brand-text">Doce <span class="amp">&amp;</span> Magia</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Alternar navegação" aria-expanded="false" aria-controls="primaryNav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="primary-nav" id="primaryNav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#hero" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#categories" class="nav-link">Categorias</a></li>
+                    <li><a href="#products" class="nav-link">Cardápio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Avaliações</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+                <button class="cart-btn" id="cartBtn" aria-label="Open shopping cart" aria-controls="cartPanel">
+                    <span class="cart-icon" aria-hidden="true">🛒</span>
+                    <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="floating-shapes" aria-hidden="true">
+            <span class="shape shape-1">♥</span>
+            <span class="shape shape-2">🧁</span>
+            <span class="shape shape-3">★</span>
+            <span class="shape shape-4">♥</span>
+            <span class="shape shape-5">🍰</span>
+            <span class="shape shape-6">✿</span>
+            <span class="shape shape-7">🍪</span>
+            <span class="shape shape-8">✦</span>
+        </div>
+
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <span class="pulse"></span> Confeitaria artesanal em Osasco
+                </span>
+                <h1 id="heroTitle" class="hero-title">
+                    O doce que faz
+                    <span class="accent">todo mundo</span>
+                    <em>lembrar</em>
+                </h1>
+                <p class="hero-subtitle">
+                    Feitos à mão, com ingredientes nobres e acabamento de quem leva a sério cada encomenda.
+                    Brigadeiros, brownies, bolos e doces que transformam qualquer momento em inesquecível.
+                </p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary">
+                        Ver Cardápio
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="#about" class="btn btn-ghost">Nossa História</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Anos de<br>tradição</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2500">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Clientes<br>satisfeitos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="18">0</span>
+                        <span class="stat-label">Doces no<br>cardápio</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stars" aria-hidden="true">★★★★★</span>
+                        <span class="stat-label">4.9 / 5<br>avaliação</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-card hero-card-1">
+                    <span class="hero-card-emoji">🍬</span>
+                    <div class="hero-card-info">
+                        <strong>Brigadeiro M</strong>
+                        <small>★★★★★ · R$ 4,50</small>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-2">
+                    <span class="hero-card-emoji">🥄</span>
+                    <div class="hero-card-info">
+                        <strong>Bolo de Pote</strong>
+                        <small>★★★★★ · R$ 20,00</small>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-3">
+                    <span class="hero-card-emoji">🍫</span>
+                    <div class="hero-card-info">
+                        <strong>Brownie G</strong>
+                        <small>★★★★★ · R$ 8,00</small>
+                    </div>
+                </div>
+                <div class="hero-main-circle">
+                    <span>🎂</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <span class="section-eyebrow">Nossa História</span>
+                <h2 id="aboutTitle" class="section-title">
+                    A cozinha da <span class="accent">Doce Magia</span>
+                </h2>
+                <p class="lead">
+                    Nascemos em 2019, durante a pandemia, com a missão de adoçar momentos especiais com doces artesanais feitos à mão.
+                </p>
+                <p>
+                    Da nossa cozinha, saem todos os dias verdadeiras obras de arte em forma de doce — brigadeiros gourmet, brownies, bolos no pote, trufas e bolos decorados que conquistam no primeiro olhar. Cada receita carrega ingredientes selecionados, técnica apurada e o cuidado obsessivo de quem faz do seu momento algo simplesmente inesquecível.
+                </p>
+
+                <div class="values-list">
+                    <div class="value-item">
+                        <span class="value-icon" aria-hidden="true">🌸</span>
+                        <div>
+                            <h4>Ingredientes nobres</h4>
+                            <p>Chocolate belga, manteiga sem sal e insumos selecionados para garantir sabor premium.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon" aria-hidden="true">🤍</span>
+                        <div>
+                            <h4>Feito à mão</h4>
+                            <p>Cada doce é preparado artesanalmente em pequenas batches, com atenção aos detalhes.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon" aria-hidden="true">📦</span>
+                        <div>
+                            <h4>Encomendas sob medida</h4>
+                            <p>Atendemos festas, casamentos, 15 anos e eventos corporativos com orçamento personalizado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-primary">Faça sua encomenda</a>
+            </div>
+
+            <div class="about-visual reveal">
+                <div class="image-placeholder main-image">
+                    <span class="placeholder-icon" aria-hidden="true">🎂</span>
+                    <span class="placeholder-text">Nossa Cozinha</span>
+                </div>
+                <div class="image-stack">
+                    <div class="image-placeholder small">
+                        <span class="placeholder-icon" aria-hidden="true">🧁</span>
+                    </div>
+                    <div class="image-placeholder small">
+                        <span class="placeholder-icon" aria-hidden="true">🍫</span>
+                    </div>
+                </div>
+                <div class="experience-badge">
+                    <strong>10+</strong>
+                    <span>anos fazendo<br>com amor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ CATEGORIES ============================ -->
+    <section class="categories" id="categories" aria-labelledby="categoriesTitle">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Categorias</span>
+                <h2 id="categoriesTitle" class="section-title">
+                    Encontre seu <span class="accent">doce favorito</span>
+                </h2>
+                <p class="section-subtitle">
+                    Navegue por categoria e descubra exatamente o que seu coração deseja.
+                </p>
+            </div>
+
+            <div class="categories-grid">
+                <button class="category-card reveal" data-category="all" aria-label="Mostrar todos os produtos">
+                    <span class="cat-icon" aria-hidden="true">🍭</span>
+                    <h3>Tudo</h3>
+                    <p>48 produtos</p>
+                </button>
+                <button class="category-card reveal" data-category="bolos" aria-label="Mostrar bolos confeitados">
+                    <span class="cat-icon" aria-hidden="true">🎂</span>
+                    <h3>Bolos</h3>
+                    <p>22 sabores</p>
+                </button>
+                <button class="category-card reveal" data-category="sobremesas" aria-label="Mostrar sobremesas">
+                    <span class="cat-icon" aria-hidden="true">🍮</span>
+                    <h3>Sobremesas</h3>
+                    <p>7 opções</p>
+                </button>
+                <button class="category-card reveal" data-category="docinhos" aria-label="Mostrar docinhos">
+                    <span class="cat-icon" aria-hidden="true">🍬</span>
+                    <h3>Docinhos</h3>
+                    <p>Meio cento e cento</p>
+                </button>
+                <button class="category-card reveal" data-category="salgados" aria-label="Mostrar salgados">
+                    <span class="cat-icon" aria-hidden="true">🥟</span>
+                    <h3>Salgados</h3>
+                    <p>Fritos e assados</p>
+                </button>
+                <button class="category-card reveal" data-category="tortas-salgadas" aria-label="Mostrar tortas salgadas">
+                    <span class="cat-icon" aria-hidden="true">🥧</span>
+                    <h3>Tortas</h3>
+                    <p>Salgadas</p>
+                </button>
+                <button class="category-card reveal" data-category="presente" aria-label="Mostrar kits presente">
+                    <span class="cat-icon" aria-hidden="true">🎁</span>
+                    <h3>Presente</h3>
+                    <p>Para presentear</p>
+                </button>
+                <button class="category-card reveal" data-category="descartaveis" aria-label="Mostrar descartáveis">
+                    <span class="cat-icon" aria-hidden="true">🕯️</span>
+                    <h3>Descartáveis</h3>
+                    <p>Velas e kits</p>
+                </button>
+                <button class="category-card reveal" data-category="descontos" aria-label="Mostrar kits com desconto">
+                    <span class="cat-icon" aria-hidden="true">⭐</span>
+                    <h3>Kits</h3>
+                    <p>Com desconto</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ PRODUCTS / MENU ============================ -->
+    <section class="products" id="products" aria-labelledby="productsTitle">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Nosso Cardápio</span>
+                <h2 id="productsTitle" class="section-title">
+                    Sabores <span class="accent">artesanais</span>
+                </h2>
+                <p class="section-subtitle">
+                    Escolha seu favorito — cada item é preparado sob encomenda. Preço final combinado via WhatsApp.
+                </p>
+            </div>
+
+            <div class="product-filters reveal" role="tablist" aria-label="Filtrar produtos">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+                <button class="filter-btn" data-filter="bolos" role="tab" aria-selected="false">Bolos</button>
+                <button class="filter-btn" data-filter="sobremesas" role="tab" aria-selected="false">Sobremesas</button>
+                <button class="filter-btn" data-filter="docinhos" role="tab" aria-selected="false">Docinhos</button>
+                <button class="filter-btn" data-filter="salgados" role="tab" aria-selected="false">Salgados</button>
+                <button class="filter-btn" data-filter="tortas-salgadas" role="tab" aria-selected="false">Tortas</button>
+                <button class="filter-btn" data-filter="presente" role="tab" aria-selected="false">Presente</button>
+                <button class="filter-btn" data-filter="descartaveis" role="tab" aria-selected="false">Descartáveis</button>
+                <button class="filter-btn" data-filter="descontos" role="tab" aria-selected="false">Kits</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============================ FEATURES / WHY US ============================ -->
+    <section class="features" aria-labelledby="featuresTitle">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Por que nos escolher</span>
+                <h2 id="featuresTitle" class="section-title">
+                    Por que escolher a <span class="accent">Doce Magia</span>
+                </h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true">📦</div>
+                    <h3>Encomendas agendadas</h3>
+                    <p>Faça seu pedido com 3 a 5 dias úteis de antecedência e retire no horário combinado.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true">🎂</div>
+                    <h3>Bolos personalizados</h3>
+                    <p>Tema, sabor e topo do bolo à sua escolha. Atendemos aniversários, casamentos e 15 anos.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true">🍫</div>
+                    <h3>Chocolate belga</h3>
+                    <p>Usamos chocolate belga e manteiga sem sal em todas as receitas — qualidade premium.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true">💳</div>
+                    <h3>Pagamento facilitado</h3>
+                    <p>Aceitamos PIX e parcelamos encomendas grandes (última parcela no dia da entrega).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ TESTIMONIALS ============================ -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonialsTitle">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Depoimentos</span>
+                <h2 id="testimonialsTitle" class="section-title">
+                    O que dizem nossos <span class="accent">clientes</span>
+                </h2>
+                <p class="section-subtitle">Cinco anos transformando festas em memórias inesquecíveis — e colecionando sorrisos que provam cada uma das nossas receitas.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="testimonial-card reveal">
+                    <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Os brigadeiros da Doce Magia são os melhores que já provei!
+                        Encomendei para o aniversário da minha filha e todos os convidados elogiaram.
+                        O bolo de cenoura com chocolate é uma delícia!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-1">AM</div>
+                        <div>
+                            <strong>Ana Martins</strong>
+                            <small>Mãe da Mariana · Osasco/SP</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Encomendei 200 brigadeiros para o casamento e foi um sucesso absoluto.
+                        Atendimento atencioso, entrega no prazo e doces maravilhosos.
+                        Super recomendo!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-2">RS</div>
+                        <div>
+                            <strong>Rafael Santos</strong>
+                            <small>Noivo · São Paulo/SP</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Sou cliente fiel há 3 anos. Os bolos no pote de ninho com nutella
+                        são viciantes! Já comprei para minha empresa várias vezes.
+                        Preço justo e qualidade imbatível."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-3">CL</div>
+                        <div>
+                            <strong>Camila Lima</strong>
+                            <small>Empresária · Barueri/SP</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ (Gallery/Instagram removida) ============================ -->
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+        <div class="container contact-grid">
+            <div class="contact-info reveal">
+                <span class="section-eyebrow">Fale conosco</span>
+                <h2 id="contactTitle" class="section-title">
+                    Vamos criar algo <span class="accent">doce</span>
+                </h2>
+                <p>Tem uma encomenda em mente? Quer um bolo personalizado ou um kit para sua festa? Entre em contato — responderemos em até 24h!</p>
+
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-icon" aria-hidden="true">📍</span>
+                        <div>
+                            <strong>Endereço</strong>
+                            <p>Rua Laranjeira, 88 — Centro, Osasco/SP, CEP 06184-020</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon" aria-hidden="true">📞</span>
+                        <div>
+                            <strong>Telefone</strong>
+                            <p>(11) 98035-4028</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon" aria-hidden="true">💬</span>
+                        <div>
+                            <strong>WhatsApp / Encomendas</strong>
+                            <p>(11) 98035-4028 — atendimento rápido</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon" aria-hidden="true">📷</span>
+                        <div>
+                            <strong>Instagram</strong>
+                            <p>@docemagiagourmett</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon" aria-hidden="true">🕐</span>
+                        <div>
+                            <strong>Horário de atendimento</strong>
+                            <p>Ter–Dom: 11h às 19h (somente com agendamento prévio)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm" novalidate aria-labelledby="contactTitle">
+                <h3 class="form-title">Faça sua encomenda</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        <small class="error-msg" data-error-for="name"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        <small class="error-msg" data-error-for="email"></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Conte para nós sobre sua ideia doce..." required></textarea>
+                    <small class="error-msg" data-error-for="message"></small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Enviar mensagem <span aria-hidden="true">→</span>
+                </button>
+                <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================ FOOTER ============================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="newsletter">
+                <h3>Novidades da Doce Magia 🍰</h3>
+                <p>Cadastre seu e-mail e ganhe 10% de desconto na primeira encomenda, além de novidades e promoções exclusivas.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="seu@email.com" required aria-label="Endereço de e-mail">
+                    <button type="submit" class="btn btn-primary">Quero me cadastrar</button>
+                </form>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="brand brand-footer">
+                        <span class="brand-icon" aria-hidden="true">🎂</span>
+                        <span class="brand-text">Doce <span class="amp">&amp;</span> Magia</span>
+                    </span>
+                    <p>Doces artesanais feitos com amor. Cada mordida conta uma história.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Explorar</h3>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#products">Cardápio</a></li>
+                        <li><a href="#testimonials">Avaliações</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Como encomendar</a></li>
+                        <li><a href="#">Prazo de entrega</a></li>
+                        <li><a href="#">Alergênicos</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Siga-nos</h3>
+                    <ul class="social-list">
+                        <li><a href="https://instagram.com/docemagiagourmett" aria-label="Instagram">[Instagram]</a></li>
+                        <li><a href="#" aria-label="Facebook">[Facebook]</a></li>
+                        <li><a href="#" aria-label="WhatsApp">[WhatsApp]</a></li>
+                        <li><a href="#" aria-label="TikTok">[TikTok]</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Doce Magia Gourmet — Confeitaria Artesanal. Todos os direitos reservados.</p>
+                <p>Feito com <span aria-hidden="true">♥</span> em Osasco/SP</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================ CART SIDE PANEL ============================ -->
+    <aside class="cart-panel" id="cartPanel" aria-label="Carrinho de compras" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Seu Carrinho <span class="cart-pill" id="cartPill">0 itens</span></h2>
+            <button class="cart-close" id="cartClose" aria-label="Fechar carrinho">✕</button>
+        </div>
+
+        <div class="cart-body" id="cartBody"></div>
+
+        <div class="cart-footer">
+            <div class="cart-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">R$ 0,00</span>
+            </div>
+            <div class="cart-row small">
+                <span>Entrega</span>
+                <span id="cartDelivery">calculada no checkout</span>
+            </div>
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">
+                Finalizar encomenda <span aria-hidden="true">→</span>
+            </button>
+            <p class="cart-note">🎁 Entrega GRÁTIS para pedidos acima de R$ 100</p>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <!-- ============================ WHATSAPP FLOATING BUTTON ============================ -->
+    <a href="https://wa.me/5511980354028?text=Olá%20Doce%20Magia!%20Quero%20fazer%20uma%20encomenda." class="whatsapp-float" aria-label="Fazer encomenda via WhatsApp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+            <path fill="currentColor" d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.2C10.7 31.3 13.3 32 16 32c8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.3c-2.5 0-4.9-.7-7-1.9l-.5-.3-5.2 1.4 1.4-5.1-.3-.5C2.8 20.7 2 18.4 2 16 2 8.3 8.3 2 16 2s14 6.3 14 14-6.3 13.3-14 13.3zm7.7-10.4c-.4-.2-2.5-1.2-2.9-1.4-.4-.1-.7-.2-1 .2-.3.4-1.1 1.4-1.3 1.6-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.3-2-1.2-1.1-2-2.4-2.3-2.8-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7s-1-2.4-1.4-3.3c-.4-.9-.7-.7-1-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.5s1.5 4 1.7 4.3c.2.3 2.9 4.5 7.1 6.3 1 .4 1.8.7 2.4.9.9.3 1.8.2 2.5.1.8-.1 2.5-1 2.8-2 .3-1 .3-1.8.2-2-.1-.2-.4-.3-.8-.5z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Faça sua encomenda</span>
+    </a>
+
+    <!-- ============================ SCROLL-TO-TOP BUTTON ============================ -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+</body>
+</html>
