@@ -773,6 +773,24 @@ const PRODUCTS = [
 const cart = []; // [{ id, qty }]
 
 // ============================================================
+// SECURITY: HTML escape helper
+// Used wherever product strings are interpolated into innerHTML
+// templates (card title, name, icon, etc.). Prevents stored XSS
+// if menu_data.json or PRODUCTS is ever fed by user-controlled
+// data. Defaults to safe escape everywhere; only places that need
+// raw HTML (like <img>) opt out by hard-coding the markup.
+// ============================================================
+function esc(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+// ============================================================
 // DOM REFERENCES
 // ============================================================
 const $ = (sel) => document.querySelector(sel);
@@ -831,8 +849,8 @@ function renderProducts() {
     productsGrid.innerHTML = PRODUCTS.map(product => {
         const hasImage = !!product.image;
         const imgMarkup = hasImage
-            ? `<img class="product-img" src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.outerHTML='<span class=\\'candy-icon\\'>${product.icon}</span>'" />`
-            : `<span class="candy-icon">${product.icon}</span>`;
+            ? `<img class="product-img" src="${esc(product.image)}" alt="${esc(product.name)}" loading="lazy" onerror="this.outerHTML='<span class=\\'candy-icon\\'>${esc(product.icon)}</span>'" />`
+            : `<span class="candy-icon">${esc(product.icon)}</span>`;
 
         const basePrice = product.price || 0;
         const hasRealPrice = basePrice > 0;
@@ -845,20 +863,20 @@ function renderProducts() {
             : `<small class="price-sub">Encomenda pelo WhatsApp</small>`;
 
         return `
-        <article class="product-card reveal" data-id="${product.id}" data-category="${product.category}" data-base-price="${basePrice}">
+        <article class="product-card reveal" data-id="${product.id}" data-category="${esc(product.category)}" data-base-price="${basePrice}">
             <div class="product-image ${product.theme} ${hasImage ? 'has-image' : ''}" aria-hidden="true">
                 ${imgMarkup}
-                <button class="product-quick-view" data-quick-view="${product.id}" aria-label="Ver detalhes de ${product.name}">
+                <button class="product-quick-view" data-quick-view="${product.id}" aria-label="Ver detalhes de ${esc(product.name)}">
                     Ver detalhes →
                 </button>
             </div>
             <div class="product-info">
-                <span class="product-category">${product.categoryLabel}</span>
-                <h3 class="product-name">${product.name}</h3>
-                <p class="product-desc">${product.description}</p>
+                <span class="product-category">${esc(product.categoryLabel)}</span>
+                <h3 class="product-name">${esc(product.name)}</h3>
+                <p class="product-desc">${esc(product.description)}</p>
                 <div class="product-qty-row">
                     <span class="product-qty-label">Quantidade:</span>
-                    <div class="qty-stepper" role="group" aria-label="Quantidade para ${product.name}">
+                    <div class="qty-stepper" role="group" aria-label="Quantidade para ${esc(product.name)}">
                         <button type="button" class="qty-step" data-qty-step="${product.id}" data-step="-1" aria-label="Diminuir quantidade">−</button>
                         <input type="number" min="1" step="1" value="1" class="qty-input" data-qty-input="${product.id}" aria-label="Quantidade" />
                         <button type="button" class="qty-step" data-qty-step="${product.id}" data-step="1" aria-label="Aumentar quantidade">+</button>
@@ -866,7 +884,7 @@ function renderProducts() {
                 </div>
                 <div class="product-bottom">
                     <span class="product-price">${priceMain}${priceSub}<small class="price-total" data-total-for="${product.id}">${hasRealPrice ? `Total: ${formatBRL(basePrice)}` : ''}</small></span>
-                    <button class="btn-add" data-add-id="${product.id}" data-add-qty="1" aria-label="Adicionar ${product.name} ao carrinho">
+                    <button class="btn-add" data-add-id="${product.id}" data-add-qty="1" aria-label="Adicionar ${esc(product.name)} ao carrinho">
                         <span>+</span> Add
                     </button>
                 </div>
@@ -1061,13 +1079,13 @@ function updateCartUI() {
             if (!product) return '';
             const lineTotal = product.price * cartItem.qty;
             const itemImg = product.image
-                ? `<img src="${product.image}" alt="${product.name}" onerror="this.outerHTML='<span style=\\'font-size:1.6rem\\'>${product.icon}</span>'" />`
-                : `<span style="font-size:1.6rem">${product.icon}</span>`;
+                ? `<img src="${esc(product.image)}" alt="${esc(product.name)}" onerror="this.outerHTML='<span style=\\'font-size:1.6rem\\'>${esc(product.icon)}</span>'" />`
+                : `<span style="font-size:1.6rem">${esc(product.icon)}</span>`;
             return `
                 <div class="cart-item" data-cart-id="${product.id}">
-                    <div class="cart-item-image ${product.theme} ${product.image ? 'has-image' : ''}" aria-hidden="true">${itemImg}</div>
+                    <div class="cart-item-image ${esc(product.theme)} ${product.image ? 'has-image' : ''}" aria-hidden="true">${itemImg}</div>
                     <div class="cart-item-info">
-                        <div class="cart-item-name">${product.name}</div>
+                        <div class="cart-item-name">${esc(product.name)}</div>
                         <div class="cart-item-price">${product.price > 0 ? formatBRL(lineTotal) : 'A consultar'}</div>
                         <div class="cart-qty">
                             <button class="qty-btn" data-qty-action="dec" data-qty-id="${product.id}" aria-label="Decrease quantity">−</button>
@@ -1075,7 +1093,7 @@ function updateCartUI() {
                             <button class="qty-btn" data-qty-action="inc" data-qty-id="${product.id}" aria-label="Increase quantity">+</button>
                         </div>
                     </div>
-                    <button class="cart-remove" data-remove-id="${product.id}" aria-label="Remove ${product.name} from cart">✕</button>
+                    <button class="cart-remove" data-remove-id="${product.id}" aria-label="Remove ${esc(product.name)} from cart">✕</button>
                 </div>
             `;
         }).join('');
@@ -1192,8 +1210,8 @@ function openQuickView(productId) {
 
     const hasImage = !!product.image;
     const imgHtml = hasImage
-        ? `<img src="${product.image}" alt="${product.name}" onerror="this.outerHTML='<span style=\\'font-size:6rem\\'>${product.icon}</span>'" />`
-        : `<span style="font-size:6rem">${product.icon}</span>`;
+        ? `<img src="${esc(product.image)}" alt="${esc(product.name)}" onerror="this.outerHTML='<span style=\\'font-size:6rem\\'>${esc(product.icon)}</span>'" />`
+        : `<span style="font-size:6rem">${esc(product.icon)}</span>`;
 
     quickViewEl.querySelector('#modalImage').className = `modal-image ${product.theme} ${hasImage ? 'has-image' : ''}`;
     quickViewEl.querySelector('#modalImage').innerHTML = imgHtml;
