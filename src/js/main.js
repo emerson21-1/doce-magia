@@ -6,6 +6,7 @@
    ============================================================ */
 
 import '../styles/main.css';
+import { rateLimit, assertPriceFromCatalog, esc } from './security.js';
 
 // ============================================================
 // PRODUCT DATA — Doce Magia Gourmet (Osasco, SP)
@@ -773,24 +774,6 @@ const PRODUCTS = [
 const cart = []; // [{ id, qty }]
 
 // ============================================================
-// SECURITY: HTML escape helper
-// Used wherever product strings are interpolated into innerHTML
-// templates (card title, name, icon, etc.). Prevents stored XSS
-// if menu_data.json or PRODUCTS is ever fed by user-controlled
-// data. Defaults to safe escape everywhere; only places that need
-// raw HTML (like <img>) opt out by hard-coding the markup.
-// ============================================================
-function esc(str) {
-    if (str === null || str === undefined) return '';
-    return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-}
-
-// ============================================================
 // DOM REFERENCES
 // ============================================================
 const $ = (sel) => document.querySelector(sel);
@@ -1155,11 +1138,33 @@ function setupCart() {
             alert('Seu carrinho está vazio! Adicione alguns doces antes de finalizar.');
             return;
         }
+        // Rate-limit the checkout button: a user that spams it
+        // (accidentally or on purpose) cannot hammer WhatsApp.
+        // The real cap lives on the server / WhatsApp Business API;
+        // this is just the client-side guard.
+        if (!rateLimit('checkout', { max: 3, windowMs: 30000 })) {
+            alert('Aguarde alguns segundos antes de enviar outro pedido.');
+            return;
+        }
         const lines = cart.map(cartItem => {
             const p = PRODUCTS.find(pp => pp.id === cartItem.id);
             if (!p) return '';
+            // Price integrity: even though PRODUCTS is local today,
+            // assert it from the catalog so the day this becomes a
+            // network call, "discount=99%" via devtools can't sneak through.
+            try {
+                assertPriceFromCatalog(
+                    { productId: p.id, qty: cartItem.qty, unitPrice: p.price },
+                    PRODUCTS
+                );
+            } catch (e) {
+                console.error(e);
+                alert('Pedido bloqueado por checagem de integridade. Recarregue a página.');
+                return null;
+            }
             return `• ${cartItem.qty}x ${p.name}`;
         }).filter(Boolean).join('\n');
+        if (!lines) return;
 
         const message = `Olá! Gostaria de fazer uma encomenda na Doce Magia:\n\n${lines}\n\nPodem me passar o valor e a disponibilidade? 😊`;
         const phone = '5511980354028';
